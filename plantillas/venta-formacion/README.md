@@ -9,7 +9,9 @@ Todas las ediciones tienen **la misma estructura y los mismos bloques**. Solo ca
 | Edición | Carpeta | Cuándo usarla | Fondo oscuro | Acento sobre blanco | Acento sobre oscuro | Panel de fechas | Banda FUNDAE |
 |---|---|---|---|---|---|---|---|
 | Base | `base/` | Todo el año | Noche `#07080C` / `#111A33` | Azul `#2563EB` | Celeste `#5BC8F5` | Azul `#1B3F94` → `#2563EB` | Azul → celeste |
-| Navidad | `navidad/` | Diciembre y campaña de enero | Pino oscuro `#06150E` / `#0B2217` | Granate `#7A1F2B` | Dorado `#F2C14E` | Verde `#143A26` → `#1D5436` | Granate `#4A0F18` → `#9E3442` |
+| Navidad | `navidad/` | Diciembre y campaña de enero | Pino oscuro `#06150E` / `#0B2217` | Granate `#7A1F2B` | Dorado `#F2C14E` | Verde pino muy oscuro `#0F2A1C` → `#163824`, fechas en granate | Granate `#4A0F18` → `#9E3442` |
+
+En la edición de Navidad no se usan verdes claros: todo el verde es pino oscuro y los tintes de las tarjetas son crema y rosa granate.
 
 Cada edición tiene su carpeta con `plantilla.html` y `img/`. Lo común a todas (logos de AI School y de FUNDAE, iconos 3D de la edición base) está en `assets/comun/`.
 
