@@ -6,13 +6,17 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 
 - Remitente: Westlabs AI School. Firma Alba Ripoll salvo que se diga otra cosa.
 - Idioma: castellano por defecto; catalán para los clientes que lo usan (sobre todo los de Lleida dados de alta a mano en el CRM).
-- Identidad: azul corporativo `#1E355F`, acentos `#2651A8` (sobre blanco) y `#6BC3E1` (solo sobre fondo oscuro), texto `#14223D` / `#5B6472`, tarjetas `#F1F4F9` con borde `#D6DDE8`. Tipografía Poppins con Arial como alternativa. El logo completo aparece una sola vez (en el pie).
+- Identidad de los correos: fondo blanco con bloques negros `#07080C`, acento principal lima `#D9FE85` (botones, palabra clave del titular, tarjeta estrella), celeste `#6BC3E1` (solo sobre negro) y azul corporativo `#1E355F`. Tarjetas de color en tintes: lima `#F2FFD6`, celeste `#E3F4FA`, azul `#E6ECF8`. Texto `#07080C` / `#3A4250` / `#5B6472`. Tipografía Poppins con Arial como alternativa. El logo completo aparece una sola vez (en blanco, en el pie negro).
 - Tono: directo, corto, en plural de Westlabs, sin fórmulas de venta. Sin emojis en los textos que se envían.
 
 ## Estructura
 
-- `plantillas/plantilla-base.html`: plantilla base promocional (todo centrado, fondo celeste, titular con subrayado amarillo, bloque estrella tipo ticket, novedad en banda oscura y dos botones). Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
-- `assets/img/`: icono blanco (cabecera) y logo azul (pie), ya a tamaño de correo.
+- `plantillas/plantilla-base.html`: plantilla base promocional. Orden: cabecera negra con titular a dos tonos, imagen principal a caballo entre negro y blanco, tarjeta estrella lima, botón, tarjetas de color con lo que se aprende, franja de datos, novedad en bloque negro con su imagen, urgencia con segundo botón, firma y pie negro. Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
+- `assets/img/`: icono blanco (cabecera), logo blanco (pie) y las imágenes de muestra `imagen-principal.jpg` y `imagen-novedad.jpg`.
+
+## Imágenes: pedirlas siempre
+
+En cada correo nuevo, antes de maquetarlo, pedir a Alba las imágenes: la principal (1040 x 600 px) y la de la novedad (1040 x 480 px), con una descripción corta para el texto alternativo. Si no hay imagen para un hueco, preguntar si se quita el bloque; nunca enviar con las imágenes de muestra. Guardarlas en `assets/img/` con el nombre del correo.
 - Cada correo nuevo se crea copiando la plantilla a `correos/AAAA-MM-DD-tema-idioma.html`.
 
 ## Envío con Gmail
