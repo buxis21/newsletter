@@ -1,199 +1,172 @@
 <!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="x-apple-disable-message-reformatting">
 <title>Westlabs AI School</title>
 <!--
-  PLANTILLA BASE · WESTLABS AI SCHOOL
-  - Todo lo que hay entre [corchetes] es texto de ejemplo o un dato pendiente.
-  - Bloques marcados con  BLOQUE ... OPCIONAL  se pueden borrar enteros.
-  - Las imágenes apuntan a ../assets/img para la vista previa. Al crear el
-    borrador en Gmail se sustituyen por imágenes incrustadas (cid).
-  - Sin emojis: el texto que se envía a clientes no los lleva.
+  PLANTILLA BASE PROMOCIONAL · WESTLABS AI SCHOOL
+  Estructura inspirada en un correo promocional de tienda: todo centrado,
+  fondo de color, titular corto, bloque estrella tipo "ticket", dos botones
+  y una novedad en banda oscura.
+  - Lo que va entre [corchetes] es texto de ejemplo o un dato pendiente.
+  - Los bloques marcados como OPCIONAL se pueden borrar enteros.
+  - Imágenes con ruta ../assets/img para la vista previa; en el borrador
+    de Gmail se cambian por cid:att0 (icono) y cid:att1 (logo).
 -->
 <style>
   body { margin:0; padding:0; }
-  a { color:#2651A8; }
   @media only screen and (max-width:620px) {
     .contenedor { width:100% !important; }
-    .pad { padding-left:24px !important; padding-right:24px !important; }
-    .titulo { font-size:28px !important; line-height:36px !important; }
-    .dato-col { display:block !important; width:100% !important; padding:0 0 12px 0 !important; }
-    .boton a { display:block !important; }
+    .pad { padding-left:22px !important; padding-right:22px !important; }
+    .h1 { font-size:34px !important; line-height:40px !important; }
+    .gigante { font-size:44px !important; line-height:50px !important; }
+    .h2 { font-size:26px !important; line-height:32px !important; }
+    .chip { display:block !important; width:100% !important; margin:0 0 8px 0 !important; }
   }
 </style>
 </head>
-<body style="margin:0; padding:0; background-color:#F1F4F9;">
+<body style="margin:0; padding:0; background-color:#DDF0F8;">
 
-<!-- Preheader: la línea que se ve en la bandeja de entrada junto al asunto. -->
-<div style="display:none; max-height:0; overflow:hidden; mso-hide:all; font-size:1px; line-height:1px; color:#F1F4F9;">
-  [Nueva formación en IA para equipos de oficina. Plazas limitadas y bonificable por FUNDAE.]
+<!-- Preheader -->
+<div style="display:none; max-height:0; overflow:hidden; font-size:1px; line-height:1px; color:#DDF0F8;">
+  [Abrimos inscripciones antes que nadie para ti. Plazas limitadas.]
 </div>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F1F4F9" style="background-color:#F1F4F9;">
-<tr>
-<td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#DDF0F8" style="background-color:#DDF0F8;">
+<tr><td align="center" style="padding:0 10px;">
 
-  <table role="presentation" class="contenedor" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#FFFFFF; border-radius:12px; overflow:hidden;">
+<table role="presentation" class="contenedor" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px;">
 
-    <!-- ===== BLOQUE 1 · CABECERA OSCURA ===== -->
-    <tr>
-      <td class="pad" bgcolor="#14223D" style="background-color:#14223D; background-image:linear-gradient(135deg,#07080C 0%,#1A2446 55%,#2651A8 100%); padding:32px 40px 40px 40px;">
-        <!-- Cabecera tipo manual: icono + línea + etiqueta -->
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <td width="46" valign="middle" style="width:46px;">
-              <img src="../assets/img/icono-westlabs-blanco.png" width="46" height="32" alt="Westlabs" style="display:block; border:0; width:46px; height:32px;">
-            </td>
-            <td valign="middle" style="padding:0 14px;">
-              <div style="height:1px; line-height:1px; font-size:1px; background-color:#FFFFFF; opacity:0.6;">&nbsp;</div>
-            </td>
-            <td width="1%" valign="middle" style="white-space:nowrap; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:12px; font-weight:700; letter-spacing:2px; color:#FFFFFF;">
-              AI SCHOOL
-            </td>
-          </tr>
-        </table>
-
-        <!-- Titular: una sola palabra clave en celeste -->
-        <h1 class="titulo" style="margin:32px 0 0 0; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:34px; line-height:42px; font-weight:500; color:#FFFFFF;">
-          [Tu equipo puede ahorrar horas cada semana con <span style="color:#6BC3E1;">IA</span>]
-        </h1>
-        <p style="margin:12px 0 0 0; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:17px; line-height:26px; font-weight:300; color:#DCE3EE;">
-          [Nueva formación práctica para equipos de oficina, administración y gestión.]
-        </p>
+  <!-- ===== CABECERA: icono + etiqueta ===== -->
+  <tr><td align="center" style="padding:36px 0 0 0;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td bgcolor="#1E355F" style="background-color:#1E355F; border-radius:40px; padding:10px 18px 10px 14px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td valign="middle"><img src="../assets/img/icono-westlabs-blanco.png" width="30" height="21" alt="Westlabs" style="display:block; border:0; width:30px; height:21px;"></td>
+          <td valign="middle" style="padding-left:10px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:12px; font-weight:700; letter-spacing:2px; color:#FFFFFF;">AI SCHOOL</td>
+        </tr></table>
       </td>
-    </tr>
+    </tr></table>
+  </td></tr>
 
-    <!-- ===== BLOQUE 2 · SALUDO E INTRODUCCIÓN ===== -->
-    <tr>
-      <td class="pad" style="padding:36px 40px 8px 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:16px; line-height:26px; color:#14223D;">
-        <p style="margin:0 0 16px 0;">Hola,</p>
-        <p style="margin:0 0 16px 0;">[En los últimos meses hemos formado a equipos de despachos, asesorías e industria en el uso de la IA en su día a día. Lo que más nos piden es lo mismo: <strong>aplicarla a las tareas de siempre</strong>, sin tecnicismos.]</p>
-        <p style="margin:0;">[Por eso abrimos una nueva edición de la formación, pensada para que cada persona salga con sus propios casos funcionando.]</p>
+  <!-- ===== KICKER + TITULAR ===== -->
+  <tr><td class="pad" align="center" style="padding:36px 40px 0 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#1E355F;">
+    <p style="margin:0; font-size:15px; font-weight:700; letter-spacing:3px; color:#2651A8;">[¡YA ESTÁ AQUÍ!]</p>
+    <h1 class="h1" style="margin:12px 0 0 0; font-size:44px; line-height:50px; font-weight:700; color:#1E355F;">
+      [La IA que tu equipo <span style="background-color:#FFE36E; padding:0 6px;">usará el lunes</span>]
+    </h1>
+    <p style="margin:20px 0 0 0; font-size:17px; line-height:27px; color:#14223D;">
+      [Abrimos una nueva edición de nuestra formación práctica de IA para equipos de oficina. Todavía no la hemos anunciado en ningún sitio, <strong>pero tú ya puedes reservar plaza.</strong>]
+    </p>
+  </td></tr>
+
+  <!-- ===== BLOQUE ESTRELLA: ticket ===== -->
+  <tr><td class="pad" align="center" style="padding:32px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:2px dashed #2651A8; border-radius:18px;">
+      <tr><td align="center" style="padding:28px 24px 30px 24px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#1E355F;">
+        <p style="margin:0; font-size:13px; font-weight:700; letter-spacing:2px; color:#5B6472;">[Y RECUERDA...]</p>
+        <p class="gigante" style="margin:8px 0 0 0; font-size:56px; line-height:62px; font-weight:700; color:#2651A8;">[100% bonificable]</p>
+        <p style="margin:6px 0 0 0; font-size:16px; line-height:25px; color:#14223D;">[con los créditos de FUNDAE de tu empresa. <strong>Nosotros hacemos todo el trámite.</strong>]</p>
+        <!-- Datos rápidos -->
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:22px;"><tr>
+          <td class="chip" bgcolor="#DDF0F8" style="background-color:#DDF0F8; border-radius:30px; padding:8px 16px; font-size:13px; font-weight:700; color:#1E355F;">[FECHA]</td>
+          <td width="8" class="chip" style="font-size:1px;">&nbsp;</td>
+          <td class="chip" bgcolor="#DDF0F8" style="background-color:#DDF0F8; border-radius:30px; padding:8px 16px; font-size:13px; font-weight:700; color:#1E355F;">[X HORAS]</td>
+          <td width="8" class="chip" style="font-size:1px;">&nbsp;</td>
+          <td class="chip" bgcolor="#DDF0F8" style="background-color:#DDF0F8; border-radius:30px; padding:8px 16px; font-size:13px; font-weight:700; color:#1E355F;">[LLEIDA U ONLINE]</td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+
+  <!-- ===== BOTÓN 1 ===== -->
+  <tr><td align="center" style="padding:30px 20px 0 20px;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td align="center" bgcolor="#1E355F" style="background-color:#1E355F; border-radius:40px;">
+        <a href="[https://westlabs.es/inscripcion]" target="_blank" style="display:inline-block; padding:17px 38px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; color:#FFFFFF; text-decoration:none; border-radius:40px;">[RESERVAR MI PLAZA]</a>
       </td>
-    </tr>
+    </tr></table>
+  </td></tr>
 
-    <!-- ===== BLOQUE 3 · TARJETA DESTACADA (datos de la formación) ===== -->
-    <tr>
-      <td class="pad" style="padding:24px 40px 8px 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F1F4F9; border:1px solid #D6DDE8; border-radius:10px;">
-          <tr>
-            <td style="padding:24px 24px 8px 24px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-              <p style="margin:0 0 4px 0; font-size:12px; font-weight:700; letter-spacing:2px; color:#2651A8;">LA FORMACIÓN</p>
-              <p style="margin:0 0 18px 0; font-size:22px; line-height:30px; font-weight:500; color:#14223D;">[IA aplicada al trabajo de oficina]</p>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:0 24px 8px 24px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr>
-                  <td class="dato-col" width="50%" valign="top" style="padding:0 12px 16px 0; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-                    <p style="margin:0; font-size:12px; font-weight:700; letter-spacing:1px; color:#5B6472;">CUÁNDO</p>
-                    <p style="margin:2px 0 0 0; font-size:15px; line-height:22px; color:#14223D;">[Fecha y horario]</p>
-                  </td>
-                  <td class="dato-col" width="50%" valign="top" style="padding:0 0 16px 12px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-                    <p style="margin:0; font-size:12px; font-weight:700; letter-spacing:1px; color:#5B6472;">FORMATO</p>
-                    <p style="margin:2px 0 0 0; font-size:15px; line-height:22px; color:#14223D;">[Presencial en Lleida / online en directo]</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="dato-col" width="50%" valign="top" style="padding:0 12px 16px 0; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-                    <p style="margin:0; font-size:12px; font-weight:700; letter-spacing:1px; color:#5B6472;">DURACIÓN</p>
-                    <p style="margin:2px 0 0 0; font-size:15px; line-height:22px; color:#14223D;">[X horas]</p>
-                  </td>
-                  <td class="dato-col" width="50%" valign="top" style="padding:0 0 16px 12px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-                    <p style="margin:0; font-size:12px; font-weight:700; letter-spacing:1px; color:#5B6472;">FUNDAE</p>
-                    <p style="margin:2px 0 0 0; font-size:15px; line-height:22px; color:#14223D;">[Bonificable. Nos encargamos del trámite]</p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:0 24px 24px 24px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:15px; line-height:24px; color:#14223D;">
-              <p style="margin:0 0 8px 0; font-weight:500;">Qué os lleváis:</p>
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                <tr><td valign="top" style="padding:0 10px 6px 0; color:#2651A8; font-weight:700;">&#8212;</td><td style="padding:0 0 6px 0;">[Redactar correos, informes y actas en la mitad de tiempo]</td></tr>
-                <tr><td valign="top" style="padding:0 10px 6px 0; color:#2651A8; font-weight:700;">&#8212;</td><td style="padding:0 0 6px 0;">[Resumir documentos largos y sacar los puntos clave]</td></tr>
-                <tr><td valign="top" style="padding:0 10px 0 0; color:#2651A8; font-weight:700;">&#8212;</td><td>[Usar la IA con criterio y sin riesgos para los datos de la empresa]</td></tr>
-              </table>
-            </td>
-          </tr>
-        </table>
+  <!-- ===== QUÉ OS LLEVÁIS ===== -->
+  <tr><td class="pad" align="center" style="padding:40px 40px 0 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#14223D;">
+    <p style="margin:0; font-size:16px; color:#14223D;">[En [X] horas, tu equipo sale sabiendo...]</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+      <tr>
+        <td width="33%" valign="top" align="center" class="chip" style="padding:0 6px;">
+          <p style="margin:0; font-size:34px; line-height:40px; font-weight:700; color:#2651A8;">01</p>
+          <p style="margin:6px 0 0 0; font-size:15px; line-height:22px;">[Redactar correos e informes en la mitad de tiempo]</p>
+        </td>
+        <td width="33%" valign="top" align="center" class="chip" style="padding:0 6px;">
+          <p style="margin:0; font-size:34px; line-height:40px; font-weight:700; color:#2651A8;">02</p>
+          <p style="margin:6px 0 0 0; font-size:15px; line-height:22px;">[Resumir documentos largos en segundos]</p>
+        </td>
+        <td width="33%" valign="top" align="center" class="chip" style="padding:0 6px;">
+          <p style="margin:0; font-size:34px; line-height:40px; font-weight:700; color:#2651A8;">03</p>
+          <p style="margin:6px 0 0 0; font-size:15px; line-height:22px;">[Usar la IA sin riesgos para los datos]</p>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <!-- ===== NOVEDAD EN BANDA OSCURA (OPCIONAL) ===== -->
+  <tr><td class="pad" align="center" style="padding:44px 40px 0 40px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+    <p style="margin:0 0 14px 0; font-size:16px; color:#14223D;">[Y descubre nuestra mayor novedad...]</p>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1A2446" style="background-color:#1A2446; background-image:linear-gradient(135deg,#07080C 0%,#1A2446 50%,#2651A8 100%); border-radius:18px;">
+      <tr><td align="center" style="padding:34px 28px 36px 28px;">
+        <p style="margin:0; font-size:12px; font-weight:700; letter-spacing:3px; color:#6BC3E1;">[NUEVO]</p>
+        <p class="h2" style="margin:8px 0 0 0; font-size:30px; line-height:36px; font-weight:700; color:#FFFFFF;">[Formaciones <span style="color:#6BC3E1;">a medida</span> para tu empresa]</p>
+        <p style="margin:12px 0 0 0; font-size:16px; line-height:25px; color:#DCE3EE;">[Con vuestros procesos, vuestras herramientas y en vuestras oficinas. Os lo montamos de principio a fin.]</p>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:22px;"><tr>
+          <td align="center" bgcolor="#6BC3E1" style="background-color:#6BC3E1; border-radius:40px;">
+            <a href="mailto:alba@westlabs.es?subject=Formaci%C3%B3n%20a%20medida" style="display:inline-block; padding:13px 28px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:14px; font-weight:700; letter-spacing:1px; color:#07080C; text-decoration:none; border-radius:40px;">[QUIERO SABER MÁS]</a>
+          </td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <!-- ===== FIN NOVEDAD ===== -->
+
+  <!-- ===== URGENCIA + BOTÓN 2 ===== -->
+  <tr><td class="pad" align="center" style="padding:40px 40px 0 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:17px; line-height:27px; color:#14223D;">
+    <p style="margin:0;"><strong>[Las plazas son limitadas]</strong> [y en la última edición se llenaron en pocos días.]</p>
+    <p style="margin:14px 0 0 0;">[¿Te guardamos una?]</p>
+  </td></tr>
+  <tr><td align="center" style="padding:24px 20px 0 20px;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td align="center" bgcolor="#2651A8" style="background-color:#2651A8; border-radius:40px;">
+        <a href="[https://westlabs.es/inscripcion]" target="_blank" style="display:inline-block; padding:17px 38px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:16px; font-weight:700; letter-spacing:1px; color:#FFFFFF; text-decoration:none; border-radius:40px;">[SÍ, QUIERO APUNTARME]</a>
       </td>
-    </tr>
+    </tr></table>
+  </td></tr>
 
-    <!-- ===== BLOQUE 4 · BOTÓN PRINCIPAL ===== -->
-    <tr>
-      <td class="pad" align="center" style="padding:28px 40px 8px 40px;">
-        <table role="presentation" class="boton" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <td align="center" bgcolor="#1E355F" style="background-color:#1E355F; border-radius:8px;">
-              <a href="[https://westlabs.es/enlace-de-inscripcion]" target="_blank" style="display:inline-block; padding:15px 32px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:15px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:8px;">[Quiero una plaza]</a>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+  <!-- ===== FIRMA ===== -->
+  <tr><td class="pad" align="center" style="padding:40px 40px 0 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#14223D;">
+    <p style="margin:0; font-size:16px;">Un abrazo,</p>
+    <p style="margin:6px 0 0 0; font-size:20px; font-weight:700; color:#1E355F;">Alba de Westlabs</p>
+  </td></tr>
 
-    <!-- ===== BLOQUE 5 · Y ADEMÁS (OPCIONAL: novedad, recurso o caso) ===== -->
-    <tr>
-      <td class="pad" style="padding:36px 40px 0 40px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr><td style="border-top:1px solid #D6DDE8; font-size:1px; line-height:1px;">&nbsp;</td></tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td class="pad" style="padding:28px 40px 0 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#14223D;">
-        <p style="margin:0 0 4px 0; font-size:12px; font-weight:700; letter-spacing:2px; color:#2651A8;">Y ADEMÁS</p>
-        <p style="margin:0 0 10px 0; font-size:20px; line-height:28px; font-weight:500;">[Formaciones a medida para tu empresa]</p>
-        <p style="margin:0; font-size:16px; line-height:26px;">[Si preferís una formación solo para vuestro equipo, la preparamos con vuestros procesos y vuestras herramientas. Respondednos a este correo y lo hablamos.]</p>
-      </td>
-    </tr>
-    <!-- ===== FIN BLOQUE 5 ===== -->
+  <!-- ===== PIE ===== -->
+  <tr><td align="center" style="padding:40px 0 0 0;">
+    <img src="../assets/img/logo-westlabs-azul.png" width="120" height="56" alt="Westlabs" style="display:block; border:0; width:120px; height:56px;">
+  </td></tr>
+  <tr><td class="pad" align="center" style="padding:16px 40px 40px 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#5B6472;">
+    <a href="https://westlabs.es" target="_blank" style="color:#1E355F; font-weight:700; text-decoration:none;">westlabs.es</a>
+    &nbsp;&middot;&nbsp;
+    <a href="[https://www.linkedin.com/company/westlabs]" target="_blank" style="color:#1E355F; text-decoration:underline;">LinkedIn</a>
+    &nbsp;&middot;&nbsp;
+    <a href="[https://www.instagram.com/westlabs]" target="_blank" style="color:#1E355F; text-decoration:underline;">Instagram</a>
+    <p style="margin:18px 0 0 0; font-size:11px; line-height:17px; color:#5B6472;">
+      [Westlabs · Razón social · CIF · Dirección postal]<br>
+      Recibes este correo porque eres cliente o has mostrado interés en nuestras formaciones.<br>
+      ¿No quieres recibir más correos? Responde con la palabra <strong>BAJA</strong>.
+    </p>
+  </td></tr>
 
-    <!-- ===== BLOQUE 6 · CIERRE Y FIRMA ===== -->
-    <tr>
-      <td class="pad" style="padding:32px 40px 36px 40px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:16px; line-height:26px; color:#14223D;">
-        <p style="margin:0 0 16px 0;">[Las plazas son limitadas. Si tienes cualquier duda, responde a este correo y te contestamos nosotros directamente.]</p>
-        <p style="margin:0;">Un saludo,</p>
-        <p style="margin:12px 0 0 0; font-weight:500;">Alba Ripoll</p>
-        <p style="margin:0; font-size:14px; line-height:22px; color:#5B6472;">Westlabs AI School</p>
-      </td>
-    </tr>
-
-    <!-- ===== BLOQUE 7 · PIE ===== -->
-    <tr>
-      <td class="pad" bgcolor="#FFFFFF" style="background-color:#FFFFFF; padding:28px 40px 32px 40px; border-top:1px solid #D6DDE8;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <td valign="middle" style="font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#5B6472;">
-              <a href="https://westlabs.es" target="_blank" style="color:#1E355F; font-weight:500; text-decoration:none;">westlabs.es</a><br>
-              <a href="[https://www.linkedin.com/company/westlabs]" target="_blank" style="color:#5B6472; text-decoration:underline;">LinkedIn</a>
-              &nbsp;&middot;&nbsp;
-              <a href="[https://www.instagram.com/westlabs]" target="_blank" style="color:#5B6472; text-decoration:underline;">Instagram</a>
-            </td>
-            <td width="130" align="right" valign="middle" style="width:130px;">
-              <img src="../assets/img/logo-westlabs-azul.png" width="130" height="61" alt="Westlabs" style="display:block; border:0; width:130px; height:61px;">
-            </td>
-          </tr>
-        </table>
-        <p style="margin:20px 0 0 0; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:12px; line-height:18px; color:#5B6472;">
-          [Westlabs · Razón social · CIF · Dirección postal]<br>
-          Recibes este correo porque eres cliente o has mostrado interés en nuestras formaciones.
-          Si no quieres recibir más comunicaciones, responde con la palabra <strong>BAJA</strong> y te quitamos de la lista.
-        </p>
-      </td>
-    </tr>
-
-  </table>
-
-</td>
-</tr>
+</table>
+</td></tr>
 </table>
 </body>
 </html>

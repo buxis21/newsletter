@@ -11,7 +11,7 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 
 ## Estructura
 
-- `plantillas/plantilla-base.html`: plantilla base. Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
+- `plantillas/plantilla-base.html`: plantilla base promocional (todo centrado, fondo celeste, titular con subrayado amarillo, bloque estrella tipo ticket, novedad en banda oscura y dos botones). Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
 - `assets/img/`: icono blanco (cabecera) y logo azul (pie), ya a tamaño de correo.
 - Cada correo nuevo se crea copiando la plantilla a `correos/AAAA-MM-DD-tema-idioma.html`.
 
