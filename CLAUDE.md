@@ -6,18 +6,19 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 
 - Remitente: Westlabs AI School. Firma Alba Ripoll salvo que se diga otra cosa.
 - Idioma: castellano por defecto; catalán para los clientes que lo usan (sobre todo los de Lleida dados de alta a mano en el CRM).
-- Identidad de los correos: fondo blanco con bloques negros `#07080C`, acento principal lima `#D9FE85` (botones, palabra clave del titular, tarjeta estrella), celeste `#6BC3E1` (solo sobre negro) y azul corporativo `#1E355F`. Tarjetas de color en tintes: lima `#F2FFD6`, celeste `#E3F4FA`, azul `#E6ECF8`. Texto `#07080C` / `#3A4250` / `#5B6472`. Letra en lima solo cuando va suelta sobre negro (titular, enlace del pie); dentro de botones y bloques la letra va en blanco (o en negro si el fondo es lima). Tipografía Poppins con Arial como alternativa. El logo completo aparece una sola vez (en blanco, en el pie negro).
+- Identidad de los correos: la de la web de la escuela (www.westlabs.es/escola). Secciones noche (`#07080C`, `#111A33`) alternadas con secciones blancas; azul `#1B3F94`, azul intenso `#2563EB`, celeste `#5BC8F5` (sobre fondo oscuro), títulos `#0E1B45`, texto `#14223D`, gris `#5B6472`, línea `#D6DDE8`, tarjetas en tintes `#E4F1FB`, `#E7EAFA`, `#D7EEF4`. Títulos a dos tonos (la segunda parte en azul intenso sobre blanco o en celeste sobre noche), etiquetas en mayúsculas con raya delante y botones en píldora con flecha: blancos con letra azul sobre fondo oscuro o azul. Títulos en AllRoundGothic con Poppins y Arial como alternativa; texto en Poppins. Logo de Westlabs AI School en la cabecera (sobre la galaxia) y en el pie. Sin lima: no está en la web de la escuela.
 - Tono: directo, corto, en plural de Westlabs, sin fórmulas de venta. Sin emojis en los textos que se envían.
 
 ## Estructura
 
-- `plantillas/plantilla-base.html`: plantilla base promocional. Orden: cabecera negra con titular a dos tonos, imagen principal a caballo entre negro y blanco, tarjeta estrella lima, botón, tarjetas de color con lo que se aprende, franja de datos, novedad en bloque negro con su imagen, urgencia con segundo botón, firma y pie negro. Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
-- `assets/img/`: icono blanco (cabecera), logo blanco (pie) y las imágenes de muestra `imagen-principal.jpg` y `imagen-novedad.jpg`.
+- `plantillas/plantilla-base.html`: plantilla base. Orden: cabecera con galaxia y logo, hero noche con titular a dos tonos, sellos y dos botones, imagen principal a caballo entre noche y blanco, convocatorias (panel azul con filas de curso), tarjetas de curso en tintes azules con icono 3D, banda FUNDAE, bloque noche de formación para empresas con su imagen, firma y pie noche con dirección. Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
+- `assets/img/`: sacado de la web de la escuela: `cabecera-ai-school.jpg` (galaxia con el logo), `logo-ai-school-blanco.png` y `logo-ai-school-azul.png`, `logo-fundae.png`, iconos 3D (`icono-*.png`) y fotos de muestra (`imagen-principal.jpg`, `imagen-novedad.jpg`).
+- Cada correo nuevo se crea copiando la plantilla a `correos/AAAA-MM-DD-tema-idioma.html`.
 
 ## Imágenes: pedirlas siempre
 
 En cada correo nuevo, antes de maquetarlo, pedir a Alba las imágenes: la principal (1040 x 600 px) y la de la novedad (1040 x 480 px), con una descripción corta para el texto alternativo. Si no hay imagen para un hueco, preguntar si se quita el bloque; nunca enviar con las imágenes de muestra. Guardarlas en `assets/img/` con el nombre del correo.
-- Cada correo nuevo se crea copiando la plantilla a `correos/AAAA-MM-DD-tema-idioma.html`.
+
 
 ## Envío con Gmail
 
