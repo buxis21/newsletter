@@ -9,7 +9,7 @@ Todas las ediciones tienen **la misma estructura y los mismos bloques**. Solo ca
 | Edición | Carpeta | Cuándo usarla | Fondo oscuro | Acento sobre blanco | Acento sobre oscuro | Panel de fechas | Banda FUNDAE |
 |---|---|---|---|---|---|---|---|
 | Base | `base/` | Todo el año | Noche `#07080C` / `#111A33` | Azul `#2563EB` | Celeste `#5BC8F5` | Azul `#1B3F94` → `#2563EB` | Azul → celeste |
-| Navidad | `navidad/` | Diciembre y campaña de enero | Pino `#0A1F17` / `#12301F` | Rojo `#C62F3B` | Dorado `#F2C14E` | Verde `#1E5136` → `#2E7D4F` | Rojo `#8E1823` → `#E0565F` |
+| Navidad | `navidad/` | Diciembre y campaña de enero | Pino oscuro `#06150E` / `#0B2217` | Granate `#7A1F2B` | Dorado `#F2C14E` | Verde `#143A26` → `#1D5436` | Granate `#4A0F18` → `#9E3442` |
 
 Cada edición tiene su carpeta con `plantilla.html` y `img/`. Lo común a todas (logos de AI School y de FUNDAE, iconos 3D de la edición base) está en `assets/comun/`.
 
@@ -43,7 +43,7 @@ Cada edición tiene su carpeta con `plantilla.html` y `img/`. Lo común a todas 
 - Tarjetas con esquinas redondeadas (16-18 px) y borde fino.
 - Ancho de 600 px; en el móvil las columnas se apilan y las filas de curso ponen la fecha debajo.
 - Títulos en AllRoundGothic con Poppins y Arial como alternativa. Gmail no carga fuentes propias: en Gmail se ven en Arial.
-- Sin emojis en el texto.
+- Sin emojis en el texto, salvo los de la edición: la de Navidad lleva dos, discretos (árbol en la etiqueta del hero y regalo en el título de FUNDAE). No añadir más.
 
 ## Imágenes: siempre nuevas
 

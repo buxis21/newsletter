@@ -7,12 +7,12 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 - Remitente: Westlabs AI School. Firma Alba Ripoll salvo que se diga otra cosa.
 - Idioma: castellano por defecto; catalán para los clientes que lo usan (sobre todo los de Lleida dados de alta a mano en el CRM).
 - Identidad: la de la web de la escuela (www.westlabs.es/escola). Secciones oscuras alternadas con secciones blancas, títulos a dos tonos, etiquetas en mayúsculas con raya, tarjetas en tintes claros y botones en píldora con flecha. Títulos en AllRoundGothic con Poppins y Arial como alternativa; texto en Poppins. Los colores dependen de la edición de la plantilla (ver su README).
-- Tono: directo, corto, en plural de Westlabs, sin fórmulas de venta. Sin emojis en los textos que se envían.
+- Tono: directo, corto, en plural de Westlabs, sin fórmulas de venta. Sin emojis en los textos que se envían, salvo los que lleve fijados la edición de la plantilla (la de Navidad lleva dos, discretos).
 
 ## Estructura del repositorio
 
 - `plantillas/`: una carpeta por plantilla. Cada plantilla tiene un `README.md` con sus bloques, reglas y ediciones, y una carpeta por edición (`plantilla.html` + `img/`).
-  - `plantillas/venta-formacion/`: correo para vender formaciones. Ediciones: `base` (colores de la web, todo el año) y `navidad` (pino, rojo y dorado).
+  - `plantillas/venta-formacion/`: correo para vender formaciones. Ediciones: `base` (colores de la web, todo el año) y `navidad` (verde pino oscuro, granate y dorado).
   - Habrá más plantillas (por ejemplo, newsletter periódica). Cada una nueva va en su carpeta con su README.
 - `assets/comun/`: lo que comparten todas las plantillas: logos de AI School (blanco y azul), logo de FUNDAE e iconos 3D de la web.
 - `correos/`: un correo por carpeta, `correos/AAAA-MM-DD-tema-idioma/` con `correo.html` e `img/` con sus imágenes. Se crea copiando la edición de la plantilla que toque.
