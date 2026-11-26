@@ -6,7 +6,7 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 
 - Remitente: Westlabs AI School. Firma Alba Ripoll salvo que se diga otra cosa.
 - Idioma: castellano por defecto; catalán para los clientes que lo usan (sobre todo los de Lleida dados de alta a mano en el CRM).
-- Identidad de los correos: fondo blanco con bloques negros `#07080C`, acento principal lima `#D9FE85` (botones, palabra clave del titular, tarjeta estrella), celeste `#6BC3E1` (solo sobre negro) y azul corporativo `#1E355F`. Tarjetas de color en tintes: lima `#F2FFD6`, celeste `#E3F4FA`, azul `#E6ECF8`. Texto `#07080C` / `#3A4250` / `#5B6472`. Tipografía Poppins con Arial como alternativa. El logo completo aparece una sola vez (en blanco, en el pie negro).
+- Identidad de los correos: fondo blanco con bloques negros `#07080C`, acento principal lima `#D9FE85` (botones, palabra clave del titular, tarjeta estrella), celeste `#6BC3E1` (solo sobre negro) y azul corporativo `#1E355F`. Tarjetas de color en tintes: lima `#F2FFD6`, celeste `#E3F4FA`, azul `#E6ECF8`. Texto `#07080C` / `#3A4250` / `#5B6472`. Letra en lima solo cuando va suelta sobre negro (titular, enlace del pie); dentro de botones y bloques la letra va en blanco (o en negro si el fondo es lima). Tipografía Poppins con Arial como alternativa. El logo completo aparece una sola vez (en blanco, en el pie negro).
 - Tono: directo, corto, en plural de Westlabs, sin fórmulas de venta. Sin emojis en los textos que se envían.
 
 ## Estructura
