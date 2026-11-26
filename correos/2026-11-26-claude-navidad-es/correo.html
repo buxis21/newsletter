@@ -7,35 +7,32 @@
 <title>Westlabs AI School · Claude en Navidad</title>
 <!--
   CORREO: cursos de Claude · campaña de Navidad · castellano
-  Plantilla: venta-formacion / edición navidad
-  Cambios respecto a la plantilla: el panel de convocatorias pasa a ser el
-  panel de la oferta (30 % + 3 plazos + código), las tarjetas son los dos
-  cursos de Claude, y se quitan la banda FUNDAE y el bloque de empresas
-  para que el correo solo hable de la oferta.
-  Cursos: Claude Esencial y Claude Avanzado, en teleformación (campus).
-  Cada curso tiene dos botones: ver qué incluye (página del curso en la web)
-  y comprar con el descuento (página de pago de Stripe).
-  Pendiente: [CODIGO], [fecha fin], horas de cada curso, enlaces de compra,
-  página de Claude Avanzado.
+  Plantilla: venta-formacion / edición navidad (versión corta)
+  Orden pensado para ir al grano: oferta y código arriba -> imagen -> los
+  3 cursos de la web, cada uno con "Comprar con un 30 %" (Stripe) y
+  "Ver qué incluye" (web) -> cómo funciona en 3 pasos -> recordatorio de
+  fecha -> firma -> pie. Sin bloques de FUNDAE ni de empresas.
+  Iconos: medallas de nivel de la web, recoloreadas para Navidad.
+  Pendiente: [CODIGO], [fecha fin], enlaces de compra de Stripe.
 -->
 <style>
   body { margin:0; padding:0; }
   @media only screen and (max-width:620px) {
     .contenedor { width:100% !important; }
-    .pad { padding-left:22px !important; padding-right:22px !important; }
-    .h1 { font-size:32px !important; line-height:38px !important; }
-    .h2 { font-size:27px !important; line-height:33px !important; }
-    .gigante { font-size:64px !important; line-height:66px !important; }
-    .col { display:block !important; width:100% !important; padding:0 0 14px 0 !important; }
-    .dato { display:block !important; width:auto !important; padding:0 0 12px 0 !important; }
-    .btn2 { display:block !important; padding:10px 0 0 0 !important; }
+    .pad { padding-left:20px !important; padding-right:20px !important; }
+    .h1 { font-size:30px !important; line-height:36px !important; }
+    .ico { width:48px !important; padding-right:14px !important; }
+    .ico img { width:48px !important; }
+    .btns td.b1 { display:block !important; }
+    .btns td.b2 { display:block !important; padding:10px 0 0 4px !important; }
+    .paso { display:block !important; width:auto !important; padding:0 0 12px 0 !important; }
   }
 </style>
 </head>
 <body style="margin:0; padding:0; background-color:#F7F1E6;">
 
 <div style="display:none; max-height:0; overflow:hidden; font-size:1px; line-height:1px; color:#F7F1E6;">
-  Este año, los cursos de Claude con un 30 % de descuento y en tres pagos.
+  Código [CODIGO]: 30 % de descuento en los cursos de Claude y pago en 3 plazos, hasta el [fecha fin].
 </div>
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F7F1E6" style="background-color:#F7F1E6;">
@@ -48,176 +45,134 @@
     <img src="img/cabecera.jpg" width="600" alt="Westlabs AI School" style="display:block; border:0; width:100%; max-width:600px; height:auto;">
   </td></tr>
 
-  <!-- 2 · HERO -->
-  <tr><td class="pad" align="center" bgcolor="#06150E" style="background-color:#06150E; padding:10px 44px 0 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+  <!-- 2 · OFERTA Y CÓDIGO -->
+  <tr><td class="pad" align="center" bgcolor="#06150E" style="background-color:#06150E; padding:6px 44px 0 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
     <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:3px; color:#F2C14E;">&#8212;&#8212;&nbsp;&nbsp;&#127876;&nbsp; ESPECIAL NAVIDAD&nbsp;&nbsp;&#8212;&#8212;</p>
-    <h1 class="h1" style="margin:16px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:40px; line-height:46px; font-weight:700; color:#FFFFFF;">
-      Aprende Claude <span style="color:#F2C14E;">con un 30&nbsp;% de descuento</span>
+    <h1 class="h1" style="margin:14px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:38px; line-height:44px; font-weight:700; color:#FFFFFF;">
+      Cursos de Claude <span style="color:#F2C14E;">con un 30&nbsp;% de descuento</span>
     </h1>
-    <p style="margin:16px 0 0 0; font-size:16px; line-height:26px; color:#BFCDC3;">
-      Este año el regalo es para tu forma de trabajar: Claude Esencial y Claude Avanzado, en nuestro campus online, con un 30&nbsp;% de descuento y en tres pagos. Solo hasta el [fecha fin].
-    </p>
-    <p style="margin:18px 0 0 0; font-size:13px; line-height:22px; color:#E6DCC8;">
-      <span style="color:#F2C14E; font-weight:700;">&#10003;</span>&nbsp;30&nbsp;% de descuento
-      &nbsp;&nbsp;&nbsp;<span style="color:#F2C14E; font-weight:700;">&#10003;</span>&nbsp;Paga en 3 plazos
-      &nbsp;&nbsp;&nbsp;<span style="color:#F2C14E; font-weight:700;">&#10003;</span>&nbsp;Certificado AI Act
-    </p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:26px;"><tr>
-      <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border-radius:40px;">
-        <a href="https://www.westlabs.es/escola/?h=claude#oferta" target="_blank" style="display:inline-block; padding:14px 28px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:14px; font-weight:500; color:#7A1F2B; text-decoration:none; border-radius:40px;">Quiero mi descuento&nbsp;&rarr;</a>
-      </td>
-      <td class="btn2" style="padding-left:10px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-          <td align="center" style="border:1px solid #5B6472; border-radius:40px;">
-            <a href="https://www.westlabs.es/escola/cursos/claude-esencial.html" target="_blank" style="display:inline-block; padding:13px 26px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:14px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:40px;">Qué incluyen</a>
-          </td>
-        </tr></table>
+    <p style="margin:12px 0 0 0; font-size:16px; line-height:25px; color:#BFCDC3;">Y en 3 plazos. Hasta el [fecha fin].</p>
+    <!-- Código -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:22px;"><tr>
+      <td align="center" bgcolor="#0F2A1C" style="background-color:#0F2A1C; border:2px dashed #F2C14E; border-radius:12px; padding:12px 30px;">
+        <p style="margin:0; font-size:10px; font-weight:700; letter-spacing:3px; color:#BFCDC3;">TU CÓDIGO</p>
+        <p style="margin:2px 0 0 0; font-size:26px; line-height:32px; font-weight:700; letter-spacing:4px; color:#FFFFFF;">[CODIGO]</p>
       </td>
     </tr></table>
+    <p style="margin:10px 0 0 0; font-size:12px; color:#8FA095;">Escríbelo al pagar.</p>
   </td></tr>
 
-  <!-- 3 · IMAGEN PRINCIPAL -->
-  <tr><td class="pad" align="center" bgcolor="#06150E" style="background-color:#06150E; background-image:linear-gradient(#06150E 0%,#06150E 50%,#FFFFFF 50%,#FFFFFF 100%); padding:36px 44px 0 44px;">
+  <!-- 3 · IMAGEN -->
+  <tr><td class="pad" align="center" bgcolor="#06150E" style="background-color:#06150E; background-image:linear-gradient(#06150E 0%,#06150E 50%,#FFFFFF 50%,#FFFFFF 100%); padding:30px 44px 0 44px;">
     <img src="img/imagen-principal.jpg" width="512" alt="Logo de Claude con gorro de Papá Noel" style="display:block; border:0; width:100%; max-width:512px; height:auto; border-radius:18px; border:1px solid #E6DCC8;">
   </td></tr>
 
-  <!-- 4 · LA OFERTA (panel) -->
-  <tr><td class="pad" style="padding:44px 44px 0 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-    <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:3px; color:#7A1F2B;">&#8212;&#8212;&nbsp;&nbsp;TU REGALO DE NAVIDAD</p>
-    <h2 class="h2" style="margin:12px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:32px; line-height:38px; font-weight:700; color:#10241A;">Un 30&nbsp;% menos <span style="color:#7A1F2B;">y en tres pagos</span></h2>
-    <p style="margin:12px 0 0 0; font-size:15px; line-height:24px; color:#5B6472;">Elige tu curso, pulsa en comprar y usa el código al pagar. El descuento se aplica al momento, puedes repartir el pago en tres plazos y al terminar te damos acceso al campus.</p>
-  </td></tr>
-  <tr><td class="pad" style="padding:24px 44px 0 44px;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0F2A1C" style="background-color:#0F2A1C; background-image:linear-gradient(135deg,#0F2A1C 0%,#163824 100%); border-radius:18px;">
-      <tr><td align="center" style="padding:30px 24px 0 24px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-        <p class="gigante" style="margin:0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:80px; line-height:82px; font-weight:700; color:#F2C14E;">-30&nbsp;%</p>
-        <p style="margin:4px 0 0 0; font-size:15px; color:#FFFFFF;">en Claude Esencial y Claude Avanzado</p>
-      </td></tr>
-      <!-- Código -->
-      <tr><td align="center" style="padding:22px 24px 0 24px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-          <td align="center" bgcolor="#122E1F" style="background-color:#122E1F; border:2px dashed #F2C14E; border-radius:12px; padding:12px 28px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-            <p style="margin:0; font-size:10px; font-weight:700; letter-spacing:3px; color:#BFCBC2;">TU CÓDIGO</p>
-            <p style="margin:2px 0 0 0; font-size:26px; line-height:32px; font-weight:700; letter-spacing:4px; color:#FFFFFF;">[CODIGO]</p>
-          </td>
-        </tr></table>
-      </td></tr>
-      <!-- Datos de la oferta -->
-      <tr><td style="padding:22px 24px 0 24px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #24412F;"><tr>
-          <td class="dato" width="50%" align="center" valign="top" style="padding:16px 8px 0 8px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-            <p style="margin:0; font-size:10px; font-weight:700; letter-spacing:2px; color:#F2C14E;">FORMA DE PAGO</p>
-            <p style="margin:4px 0 0 0; font-size:15px; line-height:21px; color:#FFFFFF;">En 3 plazos</p>
-          </td>
-          <td class="dato" width="50%" align="center" valign="top" style="padding:16px 8px 0 8px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-            <p style="margin:0; font-size:10px; font-weight:700; letter-spacing:2px; color:#F2C14E;">VÁLIDO HASTA</p>
-            <p style="margin:4px 0 0 0; font-size:15px; line-height:21px; color:#FFFFFF;">[fecha fin]</p>
-          </td>
-        </tr></table>
-      </td></tr>
-      <tr><td align="center" style="padding:24px 24px 30px 24px;">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-          <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border-radius:40px;">
-            <a href="https://www.westlabs.es/escola/?h=claude#oferta" target="_blank" style="display:inline-block; padding:13px 26px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:14px; font-weight:500; color:#7A1F2B; text-decoration:none; border-radius:40px;">Elige tu curso&nbsp;&rarr;</a>
-          </td>
-        </tr></table>
-      </td></tr>
-    </table>
+  <!-- 4 · LOS 3 CURSOS -->
+  <tr><td class="pad" align="center" style="padding:36px 44px 0 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+    <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:3px; color:#7A1F2B;">&#8212;&#8212;&nbsp;&nbsp;ELIGE TU NIVEL&nbsp;&nbsp;&#8212;&#8212;</p>
   </td></tr>
 
-  <!-- 5 · LOS CURSOS DE CLAUDE -->
-  <tr><td class="pad" align="center" style="padding:52px 44px 0 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-    <p style="margin:0; font-size:11px; font-weight:700; letter-spacing:3px; color:#7A1F2B;">&#8212;&#8212;&nbsp;&nbsp;LOS CURSOS DE CLAUDE&nbsp;&nbsp;&#8212;&#8212;</p>
-    <h2 class="h2" style="margin:12px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:32px; line-height:38px; font-weight:700; color:#10241A;">Elige cómo quieres <span style="color:#7A1F2B;">aprender Claude</span></h2>
-    <p style="margin:12px 0 0 0; font-size:15px; line-height:24px; color:#5B6472;">Dos niveles en el campus online, a tu ritmo. Mira qué incluye cada uno y cómpralo directamente con el descuento.</p>
-  </td></tr>
-  <tr><td class="pad" style="padding:24px 44px 0 44px;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-      <!-- Curso 1 -->
-      <td class="col" width="50%" valign="top" style="padding:0 7px 0 0;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FAF5EC" style="background-color:#FAF5EC; border:1px solid #E6DCC8; border-radius:16px;">
-          <tr><td style="padding:22px 20px 22px 20px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-            <img src="img/icono-1.png" width="48" alt="" style="display:block; border:0; width:48px; height:auto;">
-            <p style="margin:14px 0 0 0; font-size:10px; font-weight:700; letter-spacing:2px; color:#7A1F2B;">NIVEL 1 · PARA EMPEZAR</p>
-            <p style="margin:4px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:19px; line-height:24px; font-weight:700; color:#10241A;">Claude Esencial</p>
-            <p style="margin:10px 0 0 0; font-size:13px; line-height:22px; color:#1E2A22;">
-              <span style="color:#7A1F2B;">&#9679;</span>&nbsp; Prompting para que responda bien a la primera<br>
-              <span style="color:#7A1F2B;">&#9679;</span>&nbsp; Configuración y memoria a tu medida<br>
-              <span style="color:#7A1F2B;">&#9679;</span>&nbsp; Proyectos y conectores: archivos, correo y calendario
-            </p>
-            <p style="margin:14px 0 0 0; font-size:11px;">
-              <span style="display:inline-block; background-color:#FFFFFF; border:1px solid #E6DCC8; border-radius:30px; padding:3px 10px; color:#1E2A22;">[X h]</span>
-              <span style="display:inline-block; background-color:#FFFFFF; border:1px solid #E6DCC8; border-radius:30px; padding:3px 10px; color:#1E2A22;">Campus online</span>
-            </p>
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;"><tr>
-              <td align="center" bgcolor="#7A1F2B" style="background-color:#7A1F2B; border-radius:40px;">
-                <a href="[https://enlace-de-compra-claude-esencial]" target="_blank" style="display:inline-block; padding:10px 18px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:40px;">Comprar con un 30&nbsp;%&nbsp;&rarr;</a>
-              </td>
-            </tr></table>
-            <p style="margin:10px 0 0 0; font-size:13px; font-weight:500;"><a href="https://www.westlabs.es/escola/cursos/claude-esencial.html" target="_blank" style="color:#7A1F2B; text-decoration:underline;">Ver qué incluye el curso</a></p>
-          </td></tr>
-        </table>
+  <!-- Curso 1 -->
+  <tr><td class="pad" style="padding:18px 44px 0 44px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FAF5EC" style="background-color:#FAF5EC; border:1px solid #E6DCC8; border-radius:16px;"><tr>
+      <td class="ico" width="64" valign="top" style="width:64px; padding:22px 16px 22px 22px;">
+        <img src="img/medalla-1.png" width="64" alt="Nivel 1" style="display:block; border:0; width:64px; height:auto;">
       </td>
-      <!-- Curso 2 -->
-      <td class="col" width="50%" valign="top" style="padding:0 0 0 7px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F4ECEE" style="background-color:#F4ECEE; border:1px solid #E6DCC8; border-radius:16px;">
-          <tr><td style="padding:22px 20px 22px 20px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-            <img src="img/icono-2.png" width="48" alt="" style="display:block; border:0; width:48px; height:auto;">
-            <p style="margin:14px 0 0 0; font-size:10px; font-weight:700; letter-spacing:2px; color:#7A1F2B;">NIVEL 2 · PARA IR MÁS ALLÁ</p>
-            <p style="margin:4px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:19px; line-height:24px; font-weight:700; color:#10241A;">Claude Avanzado</p>
-            <p style="margin:10px 0 0 0; font-size:13px; line-height:22px; color:#1E2A22;">
-              <span style="color:#7A1F2B;">&#9679;</span>&nbsp; [Punto 1 del temario]<br>
-              <span style="color:#7A1F2B;">&#9679;</span>&nbsp; [Punto 2 del temario]<br>
-              <span style="color:#7A1F2B;">&#9679;</span>&nbsp; [Punto 3 del temario]
-            </p>
-            <p style="margin:14px 0 0 0; font-size:11px;">
-              <span style="display:inline-block; background-color:#FFFFFF; border:1px solid #E6DCC8; border-radius:30px; padding:3px 10px; color:#1E2A22;">[X h]</span>
-              <span style="display:inline-block; background-color:#FFFFFF; border:1px solid #E6DCC8; border-radius:30px; padding:3px 10px; color:#1E2A22;">Campus online</span>
-            </p>
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;"><tr>
-              <td align="center" bgcolor="#7A1F2B" style="background-color:#7A1F2B; border-radius:40px;">
-                <a href="[https://enlace-de-compra-claude-avanzado]" target="_blank" style="display:inline-block; padding:10px 18px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:40px;">Comprar con un 30&nbsp;%&nbsp;&rarr;</a>
-              </td>
-            </tr></table>
-            <p style="margin:10px 0 0 0; font-size:13px; font-weight:500;"><a href="[https://www.westlabs.es/escola/cursos/claude-avanzado.html]" target="_blank" style="color:#7A1F2B; text-decoration:underline;">Ver qué incluye el curso</a></p>
-          </td></tr>
-        </table>
-      </td>
-    </tr></table>
-    <p style="margin:12px 0 0 0; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:12px; line-height:18px; color:#5B6472;">Al pagar, te damos acceso al campus y empiezas cuando quieras. [Los dos cursos incluyen el certificado de alfabetización en IA (art. 4 del Reglamento Europeo de IA).] [Para el campus necesitas una cuenta de Claude Pro, que no está incluida.]</p>
-  </td></tr>
-
-  <!-- 6 · URGENCIA Y BOTÓN FINAL -->
-  <tr><td class="pad" align="center" style="padding:44px 44px 0 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-    <p style="margin:0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:22px; line-height:30px; font-weight:700; color:#10241A;">El código vale hasta el <span style="color:#7A1F2B;">[fecha fin]</span></p>
-    <p style="margin:10px 0 0 0; font-size:15px; line-height:24px; color:#5B6472;">Después de esa fecha, los cursos vuelven a su precio normal.</p>
-  </td></tr>
-  <tr><td align="center" style="padding:22px 20px 0 20px;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-      <td align="center" bgcolor="#7A1F2B" style="background-color:#7A1F2B; border-radius:40px;">
-        <a href="https://www.westlabs.es/escola/?h=claude#oferta" target="_blank" style="display:inline-block; padding:15px 30px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:14px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:40px;">Elegir mi curso con un 30&nbsp;% menos&nbsp;&rarr;</a>
+      <td valign="top" style="padding:22px 22px 22px 0; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+        <p style="margin:0; font-size:10px; font-weight:700; letter-spacing:2px; color:#7A1F2B;">NIVEL 1 · PARA EMPEZAR</p>
+        <p style="margin:3px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:20px; line-height:26px; font-weight:700; color:#10241A;">Claude Esencial</p>
+        <p style="margin:6px 0 0 0; font-size:13px; line-height:21px; color:#1E2A22;">Prompting y configuración · Proyectos y memoria · Conectores con tus herramientas</p>
+        <table role="presentation" class="btns" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;"><tr>
+          <td class="b1" align="center" bgcolor="#7A1F2B" style="background-color:#7A1F2B; border-radius:40px;">
+            <a href="[https://enlace-de-compra-claude-esencial]" target="_blank" style="display:inline-block; padding:10px 18px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:40px;">Comprar con un 30&nbsp;%&nbsp;&rarr;</a>
+          </td>
+          <td class="b2" style="padding-left:14px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px;">
+            <a href="https://www.westlabs.es/escola/cursos/claude-esencial.html" target="_blank" style="color:#7A1F2B; text-decoration:underline;">Ver qué incluye</a>
+          </td>
+        </tr></table>
       </td>
     </tr></table>
   </td></tr>
 
-  <!-- 7 · FIRMA -->
-  <tr><td class="pad" align="center" style="padding:40px 44px 40px 44px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#1E2A22;">
-    <p style="margin:0; font-size:15px; line-height:24px; color:#5B6472;">¿Dudas sobre qué curso te encaja? Responde a este correo y te lo decimos.</p>
-    <p style="margin:18px 0 0 0; font-size:15px;">Felices fiestas,</p>
+  <!-- Curso 2 -->
+  <tr><td class="pad" style="padding:12px 44px 0 44px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F4ECEE" style="background-color:#F4ECEE; border:1px solid #E6DCC8; border-radius:16px;"><tr>
+      <td class="ico" width="64" valign="top" style="width:64px; padding:22px 16px 22px 22px;">
+        <img src="img/medalla-2.png" width="64" alt="Nivel 2" style="display:block; border:0; width:64px; height:auto;">
+      </td>
+      <td valign="top" style="padding:22px 22px 22px 0; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+        <p style="margin:0; font-size:10px; font-weight:700; letter-spacing:2px; color:#7A1F2B;">NIVEL 2 · INCLUYE EL NIVEL 1</p>
+        <p style="margin:3px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:20px; line-height:26px; font-weight:700; color:#10241A;">Claude Avanzado</p>
+        <p style="margin:6px 0 0 0; font-size:13px; line-height:21px; color:#1E2A22;">Todo el nivel 1 · Skills y Claude en Excel, Word y correo · Automatizaciones en el navegador</p>
+        <table role="presentation" class="btns" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;"><tr>
+          <td class="b1" align="center" bgcolor="#7A1F2B" style="background-color:#7A1F2B; border-radius:40px;">
+            <a href="[https://enlace-de-compra-claude-avanzado]" target="_blank" style="display:inline-block; padding:10px 18px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; font-weight:500; color:#FFFFFF; text-decoration:none; border-radius:40px;">Comprar con un 30&nbsp;%&nbsp;&rarr;</a>
+          </td>
+          <td class="b2" style="padding-left:14px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px;">
+            <a href="https://www.westlabs.es/escola/cursos/claude-avanzado.html" target="_blank" style="color:#7A1F2B; text-decoration:underline;">Ver qué incluye</a>
+          </td>
+        </tr></table>
+      </td>
+    </tr></table>
+  </td></tr>
+
+  <!-- Curso 3 (destacado, en oscuro como en la web) -->
+  <tr><td class="pad" style="padding:12px 44px 0 44px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0F2A1C" style="background-color:#0F2A1C; background-image:linear-gradient(135deg,#0F2A1C 0%,#163824 100%); border-radius:16px;"><tr>
+      <td class="ico" width="64" valign="top" style="width:64px; padding:22px 16px 22px 22px;">
+        <img src="img/medalla-3.png" width="64" alt="Nivel 3" style="display:block; border:0; width:64px; height:auto;">
+      </td>
+      <td valign="top" style="padding:22px 22px 22px 0; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+        <p style="margin:0;"><span style="display:inline-block; background-color:#F2C14E; border-radius:30px; padding:3px 10px; font-size:10px; font-weight:700; letter-spacing:2px; color:#06150E;">CURSO COMPLETO</span></p>
+        <p style="margin:8px 0 0 0; font-size:10px; font-weight:700; letter-spacing:2px; color:#F2C14E;">NIVEL 3 · INCLUYE LOS NIVELES 1 Y 2</p>
+        <p style="margin:3px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:20px; line-height:26px; font-weight:700; color:#FFFFFF;">Claude Completo</p>
+        <p style="margin:6px 0 0 0; font-size:13px; line-height:21px; color:#BFCDC3;">Todo lo de los niveles 1 y 2 · Artefactos y miniaplicaciones · Agentes y proyecto propio</p>
+        <table role="presentation" class="btns" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;"><tr>
+          <td class="b1" align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border-radius:40px;">
+            <a href="[https://enlace-de-compra-claude-completo]" target="_blank" style="display:inline-block; padding:10px 18px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px; font-weight:500; color:#7A1F2B; text-decoration:none; border-radius:40px;">Comprar con un 30&nbsp;%&nbsp;&rarr;</a>
+          </td>
+          <td class="b2" style="padding-left:14px; font-family:'Poppins',Arial,Helvetica,sans-serif; font-size:13px;">
+            <a href="https://www.westlabs.es/escola/cursos/claude-completo.html" target="_blank" style="color:#FFFFFF; text-decoration:underline;">Ver qué incluye</a>
+          </td>
+        </tr></table>
+      </td>
+    </tr></table>
+  </td></tr>
+
+  <!-- 5 · CÓMO FUNCIONA -->
+  <tr><td class="pad" style="padding:30px 44px 0 44px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #E6DCC8; border-bottom:1px solid #E6DCC8;"><tr>
+      <td class="paso" width="33%" valign="top" style="padding:18px 8px 18px 0; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+        <p style="margin:0; font-size:20px; font-weight:700; color:#7A1F2B;">1</p>
+        <p style="margin:2px 0 0 0; font-size:13px; line-height:19px; color:#1E2A22;">Elige tu nivel y pulsa en comprar</p>
+      </td>
+      <td class="paso" width="34%" valign="top" style="padding:18px 8px 18px 8px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+        <p style="margin:0; font-size:20px; font-weight:700; color:#7A1F2B;">2</p>
+        <p style="margin:2px 0 0 0; font-size:13px; line-height:19px; color:#1E2A22;">Paga con tu código, en 1 o en 3 plazos</p>
+      </td>
+      <td class="paso" width="33%" valign="top" style="padding:18px 0 18px 8px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+        <p style="margin:0; font-size:20px; font-weight:700; color:#7A1F2B;">3</p>
+        <p style="margin:2px 0 0 0; font-size:13px; line-height:19px; color:#1E2A22;">Recibes el acceso al campus y empiezas</p>
+      </td>
+    </tr></table>
+  </td></tr>
+
+  <!-- 6 · CIERRE Y FIRMA -->
+  <tr><td class="pad" align="center" style="padding:30px 44px 40px 44px; font-family:'Poppins',Arial,Helvetica,sans-serif; color:#1E2A22;">
+    <p style="margin:0; font-size:15px; line-height:24px;"><strong>El código vale hasta el <span style="color:#7A1F2B;">[fecha fin]</span>.</strong> ¿Dudas sobre qué nivel te encaja? Responde a este correo.</p>
+    <p style="margin:20px 0 0 0; font-size:15px;">Felices fiestas,</p>
     <p style="margin:2px 0 0 0; font-family:'AllRoundGothic','Poppins',Arial,Helvetica,sans-serif; font-size:19px; font-weight:700; color:#10241A;">Alba Ripoll</p>
     <p style="margin:0; font-size:13px; color:#5B6472;">Westlabs AI School</p>
   </td></tr>
 
-  <!-- 8 · PIE -->
-  <tr><td class="pad" bgcolor="#06150E" style="background-color:#06150E; background-image:linear-gradient(160deg,#0B2217 0%,#06150E 60%); padding:36px 44px 32px 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
-    <img src="../../assets/comun/logo-ai-school-blanco.png" width="200" alt="Westlabs AI School" style="display:block; border:0; width:200px; height:auto;">
-    <p style="margin:18px 0 0 0; font-size:12px; line-height:20px; color:#BFCDC3;">
-      Av. Blondel, 25 · 25001 Lleida<br>
+  <!-- 7 · PIE -->
+  <tr><td class="pad" bgcolor="#06150E" style="background-color:#06150E; background-image:linear-gradient(160deg,#0B2217 0%,#06150E 60%); padding:32px 44px 30px 44px; font-family:'Poppins',Arial,Helvetica,sans-serif;">
+    <img src="../../assets/comun/logo-ai-school-blanco.png" width="180" alt="Westlabs AI School" style="display:block; border:0; width:180px; height:auto;">
+    <p style="margin:16px 0 0 0; font-size:12px; line-height:20px; color:#BFCDC3;">
       <a href="https://www.westlabs.es/escola/" target="_blank" style="color:#FFFFFF; text-decoration:none;">westlabs.es/escola</a>
       &nbsp;&middot;&nbsp; <a href="https://www.linkedin.com/company/westlabss" target="_blank" style="color:#FFFFFF; text-decoration:underline;">LinkedIn</a>
       &nbsp;&middot;&nbsp; <a href="https://www.instagram.com/westlabs.es/" target="_blank" style="color:#FFFFFF; text-decoration:underline;">Instagram</a>
     </p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:22px;"><tr><td style="border-top:1px solid #173326; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
     <p style="margin:16px 0 0 0; font-size:11px; line-height:17px; color:#8FA095;">
       Westlabs SCP · NIF J93966125 · Av. Blondel, 25, 1.º 1.ª, 25001 Lleida<br>
       Recibes este correo porque eres cliente o has mostrado interés en nuestras formaciones.
