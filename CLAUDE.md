@@ -6,23 +6,35 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 
 - Remitente: Westlabs AI School. Firma Alba Ripoll salvo que se diga otra cosa.
 - Idioma: castellano por defecto; catalán para los clientes que lo usan (sobre todo los de Lleida dados de alta a mano en el CRM).
-- Identidad de los correos: la de la web de la escuela (www.westlabs.es/escola). Secciones noche (`#07080C`, `#111A33`) alternadas con secciones blancas; azul `#1B3F94`, azul intenso `#2563EB`, celeste `#5BC8F5` (sobre fondo oscuro), títulos `#0E1B45`, texto `#14223D`, gris `#5B6472`, línea `#D6DDE8`, tarjetas en tintes `#E4F1FB`, `#E7EAFA`, `#D7EEF4`. Títulos a dos tonos (la segunda parte en azul intenso sobre blanco o en celeste sobre noche), etiquetas en mayúsculas con raya delante y botones en píldora con flecha: blancos con letra azul sobre fondo oscuro o azul. Títulos en AllRoundGothic con Poppins y Arial como alternativa; texto en Poppins. Logo de Westlabs AI School en la cabecera (sobre la galaxia) y en el pie. Sin lima: no está en la web de la escuela.
+- Identidad: la de la web de la escuela (www.westlabs.es/escola). Secciones oscuras alternadas con secciones blancas, títulos a dos tonos, etiquetas en mayúsculas con raya, tarjetas en tintes claros y botones en píldora con flecha. Títulos en AllRoundGothic con Poppins y Arial como alternativa; texto en Poppins. Los colores dependen de la edición de la plantilla (ver su README).
 - Tono: directo, corto, en plural de Westlabs, sin fórmulas de venta. Sin emojis en los textos que se envían.
 
-## Estructura
+## Estructura del repositorio
 
-- `plantillas/plantilla-base.html`: plantilla base. Orden: cabecera con galaxia y logo, hero noche con titular a dos tonos, sellos y dos botones, imagen principal a caballo entre noche y blanco, convocatorias (panel azul con filas de curso), tarjetas de curso en tintes azules con icono 3D, banda FUNDAE, bloque noche de formación para empresas con su imagen, firma y pie noche con dirección. Maquetada con tablas y estilos en línea para que funcione en Gmail, Outlook y Apple Mail. Lo que va entre [corchetes] es contenido de ejemplo o un dato pendiente. Los bloques marcados como OPCIONAL se pueden quitar.
-- `assets/img/`: sacado de la web de la escuela: `cabecera-ai-school.jpg` (galaxia con el logo), `logo-ai-school-blanco.png` y `logo-ai-school-azul.png`, `logo-fundae.png`, iconos 3D (`icono-*.png`) y fotos de muestra (`imagen-principal.jpg`, `imagen-novedad.jpg`).
-- Cada correo nuevo se crea copiando la plantilla a `correos/AAAA-MM-DD-tema-idioma.html`.
+- `plantillas/`: una carpeta por plantilla. Cada plantilla tiene un `README.md` con sus bloques, reglas y ediciones, y una carpeta por edición (`plantilla.html` + `img/`).
+  - `plantillas/venta-formacion/`: correo para vender formaciones. Ediciones: `base` (colores de la web, todo el año) y `navidad` (pino, rojo y dorado).
+  - Habrá más plantillas (por ejemplo, newsletter periódica). Cada una nueva va en su carpeta con su README.
+- `assets/comun/`: lo que comparten todas las plantillas: logos de AI School (blanco y azul), logo de FUNDAE e iconos 3D de la web.
+- `correos/`: un correo por carpeta, `correos/AAAA-MM-DD-tema-idioma/` con `correo.html` e `img/` con sus imágenes. Se crea copiando la edición de la plantilla que toque.
+- `herramientas/preparar_borrador.py`: prepara un correo para el borrador de Gmail (ver abajo).
 
-## Imágenes: pedirlas siempre
+## Cómo se hace un correo nuevo
 
-En cada correo nuevo, antes de maquetarlo, pedir a Alba las imágenes: la principal (1040 x 600 px) y la de la novedad (1040 x 480 px), con una descripción corta para el texto alternativo. Si no hay imagen para un hueco, preguntar si se quita el bloque; nunca enviar con las imágenes de muestra. Guardarlas en `assets/img/` con el nombre del correo.
+1. Preguntar qué plantilla y qué edición, a qué lista va y en qué idioma.
+2. Pedir las imágenes (ver abajo) y el contenido: curso, fechas, precio o bonificación, enlaces.
+3. Copiar la edición a `correos/AAAA-MM-DD-tema-idioma/`, rellenar los textos y quitar los bloques que no hagan falta.
+4. Revisar en ordenador y móvil, y que no quede ningún [corchete].
+5. Crear el borrador en Gmail para que Alba lo vea en real.
 
+## Imágenes: siempre nuevas
+
+- En cada correo nuevo, antes de maquetar, pedir a Alba las imágenes: la principal (1040 x 600 px) y la del bloque de empresas (1040 x 480 px), con una descripción corta para el texto alternativo. Si no hay imagen para un hueco, preguntar si se quita el bloque.
+- Nunca enviar con las imágenes de muestra de la plantilla ni reutilizar las de otro correo o de otra edición.
+- Cada edición de plantilla tiene sus propias imágenes (cabecera recoloreada, fotos y, si hace falta, iconos) adaptadas a sus colores.
 
 ## Envío con Gmail
 
-- La vista previa real se hace creando un borrador en Gmail con el conector (`create_draft` con `htmlBody`). Gmail elimina las imágenes externas del borrador: las imágenes se adjuntan como inline y en el HTML se cambian los `src` por `cid:att0`, `cid:att1`… según su posición en los adjuntos.
+- La vista previa real se hace creando un borrador en Gmail con el conector (`create_draft` con `htmlBody`). Gmail elimina las imágenes externas del borrador, así que las imágenes van adjuntas como inline y en el HTML los `src` pasan a `cid:att0`, `cid:att1`… en el orden de los adjuntos. `python3 herramientas/preparar_borrador.py <correo.html>` hace el cambio, lista los adjuntos con su sha256 y avisa de los corchetes pendientes.
 - Nunca enviar sin la confirmación explícita de Alba.
 
 ### Límites de Gmail (tenerlos siempre en cuenta)
