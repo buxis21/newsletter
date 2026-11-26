@@ -36,6 +36,8 @@ Repositorio para preparar los correos HTML (anuncios y newsletter periódica) qu
 
 - La vista previa real se hace creando un borrador en Gmail con el conector (`create_draft` con `htmlBody`). Gmail elimina las imágenes externas del borrador, así que las imágenes van adjuntas como inline y en el HTML los `src` pasan a `cid:att0`, `cid:att1`… en el orden de los adjuntos. `python3 herramientas/preparar_borrador.py <correo.html>` hace el cambio, lista los adjuntos con su sha256 y avisa de los corchetes pendientes.
 - Nunca enviar sin la confirmación explícita de Alba.
+- Después de crear el borrador, comprobarlo: `get_draft` en formato RAW y `python3 herramientas/verificar_imagenes.py <json>`. Cada imagen tiene que apuntar a su archivo.
+- No editar ni enviar el correo desde el editor de Gmail: al cambiar el destinatario y enviar desde el borrador, Gmail mezcló las imágenes (la cabecera salió como una medalla grande). Para enviarlo, Alba confirma los destinatarios y se envía con el conector (`send_message`, mismo HTML y adjuntos), y después se comprueba el enviado con el mismo script.
 
 ### Límites de Gmail (tenerlos siempre en cuenta)
 
